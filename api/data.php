@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
 // Подключение к БД (пример для MySQL)
-$servername = "10.123.0.210";
+$servername = "localhost:8000";
 $username = "aleale271_users";
 $password = "CarolineTurner03!";
 $dbname = "aleale271_users";

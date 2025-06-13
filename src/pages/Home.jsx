@@ -5,6 +5,7 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
+    // garden-budget.test.tools/www/garden-budget.test.tools/api/data.php
     fetch('./api/data.php') // Будет проксироваться через Vite
       .then(res => res.json())
       .then(setData);
@@ -28,6 +29,8 @@ const Home = () => {
       console.log('catch');
     }
   }
+
+  // php -S localhost:8000 -t .
 
   return (
     <div className="bg-[#DDE5B6] w-7/9 mx-auto h-[100vh] p-10">
